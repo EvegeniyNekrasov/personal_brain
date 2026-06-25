@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+*.tmp
+*.swp
+*.swo
+
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/workspace-mobile.json
+
