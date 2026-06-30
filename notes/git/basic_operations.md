@@ -14,6 +14,13 @@ Commit contains pointer to specific tree.
 ---
 config:
   theme: base
+  look: classic
+  themeVariables:
+    background: "#ffffff"
+    textColor: "#111111"
+    primaryTextColor: "#111111"
+    lineColor: "#57606a"
+    edgeLabelBackground: "#ffffff"
   flowchart:
     htmlLabels: true
 ---
@@ -32,21 +39,22 @@ flowchart TB
     T --> B1
     T --> B2
 
-    %% Esto ayuda a mantener Root a la derecha del Tree
     T ~~~ R
     R -.-> T
 
-    classDef commit fill:#dcebd7,stroke:#8db97a,stroke-width:2px,color:#111,rx:20,ry:20;
-    classDef tree fill:#f7e4c8,stroke:#d6a03a,stroke-width:2px,color:#111,rx:20,ry:20;
-    classDef blob1 fill:#dce7fa,stroke:#7b97c6,stroke-width:2px,color:#111,rx:20,ry:20;
-    classDef blob2 fill:#eadff2,stroke:#9b83ae,stroke-width:2px,color:#111,rx:20,ry:20;
-    classDef note fill:transparent,stroke:transparent,color:#111;
+    classDef commit fill:#dcebd7,stroke:#8db97a,stroke-width:2px,color:#111111,rx:20,ry:20;
+    classDef tree fill:#f7e4c8,stroke:#d6a03a,stroke-width:2px,color:#111111,rx:20,ry:20;
+    classDef blob1 fill:#dce7fa,stroke:#7b97c6,stroke-width:2px,color:#111111,rx:20,ry:20;
+    classDef blob2 fill:#eadff2,stroke:#9b83ae,stroke-width:2px,color:#111111,rx:20,ry:20;
+    classDef note fill:transparent,stroke:transparent,color:#111111;
 
     class C commit
     class T tree
     class B1 blob1
     class B2 blob2
     class R note
+
+    linkStyle default stroke:#57606a,stroke-width:2px;
 ```
 
 Commit is an wrapper around tree object in git database.
