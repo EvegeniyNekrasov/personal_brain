@@ -33,7 +33,7 @@ flowchart TB
     B1["<span style='color:#2e9b57'>b7aec5</span> &nbsp;&nbsp; <u>Blob</u><br/><br/>Hello, Git"]
     B2["<span style='color:#2e9b57'>4400aa</span> &nbsp;&nbsp; <u>Blob</u><br/><br/>Second file in Git repository"]
 
-    R["Root<br/>directory"]
+    R["<span style='color: red'>Root<br/>directory</span>"]
 
     C --> T
     T --> B1
